@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Tf; // Температура по Фаренгейту
+        var Tc; // Температура по Цельсию
+        Tc = +prompt("Введите температуру по цельсию");
+        Tf = (9 / 5) * Tc + 32;
+        alert(Tc + " по Цельсию равны " + Tf + " по Фаренгейту");
+        
+        
+        
+        var admin;
+        var name = "Василий";
+        admin = name;
+        alert(admin);
+
+
+
+        var a = 1000;
+        var b = "108";
+        var c = a + b; // Результатом выражения 1000 + "108" является строка
+        admin += admin;
+        alert(c);
+        alert(admin);
+        for(i=0; i<c.length; i++) {
+            alert(c[i])
+        }
+        for(i=0; i<c.length; i++) {
+            alert(c.charCodeAt(i));
+        }
+
+    </script>
+</body>
+</html>
