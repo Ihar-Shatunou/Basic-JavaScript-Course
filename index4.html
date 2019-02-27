@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function expandedNum( num ){
+            var objectNum = {};
+            if( num > 999 ){
+                return objectNum;
+            }
+            else{
+                objectNum.еденицы = num % 10;
+                objectNum.десятки = ( num - objectNum.еденицы ) % 100 / 10;
+                objectNum.сотни = ( num - objectNum.еденицы - objectNum.десятки * 10 ) % 1000 / 100;
+                return objectNum;
+            }
+        };
+            console.log(expandedNum( 555 ));
+
+    </script>
+
+
+   </body>
+</html
